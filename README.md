@@ -38,6 +38,19 @@ Additional virtualization platforms may follow in later major versions as the pr
 
 The long-term goal is to manage different virtualization technologies through a consistent interface while preserving their platform-specific capabilities.
 
+## Technology
+
+HV-Desk is currently built with:
+
+- Node.js for backend services and APIs
+- React and Vite for the web interface
+- PostgreSQL for persistent data
+- PowerShell and WinRM for virtualization host management
+- Kerberos for domain-based host access
+- LDAP/LDAPS for Active Directory user authentication
+
+The architecture is being developed with future support for additional virtualization platforms in mind.
+
 ## Development Status
 
 HV-Desk is currently under active development and is not yet production-ready.
