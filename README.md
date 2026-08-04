@@ -6,6 +6,24 @@ The project aims to provide a central, modern, and easy-to-use interface for man
 
 The first major release will focus on **Microsoft Hyper-V**. Support for **Proxmox VE** and additional virtualization platforms is planned for future major versions.
 
+## Why I Built HV-Desk
+
+Because managing Hyper-V — especially in a cluster — is way more painful than it needs to be.
+
+Too many everyday tasks are scattered across different tools, buried in menus, hidden behind PowerShell, or give you little to no useful feedback while something is happening.
+Coming from VMware vSphere, I wanted something that feels less like fighting the administration layer all day and more like actually managing the environment.
+
+HV-Desk started because I wanted:
+- one place to manage hosts, clusters, VMs, storage, and related tasks
+- clear progress instead of "something is happening, probably"
+- useful errors instead of vague failures
+- less jumping between GUIs, consoles, and PowerShell
+- fewer repetitive CLI commands for normal day-to-day work
+- a smoother transition for people used to vSphere-style infrastructure management
+- an interface that actually tells you what is going on
+
+In short: I got tired of spending more time managing the management tools than managing the infrastructure.
+
 ## Project Goals
 
 * Centralized management of virtualization environments
