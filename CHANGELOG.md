@@ -5,6 +5,137 @@ The newest version is listed first.
 
 ---
 
+## v0.20.11
+
+- Host networking now includes a dedicated routing view for IPv4 and IPv6 routes.
+- Default routes can be managed directly from the host networking area.
+- Static IPv4 and IPv6 routes can be added, updated, and removed where Windows reports them as safely manageable.
+- IPv4 and IPv6 interface metrics can now be configured independently.
+- Routing changes include safeguards against disconnecting the active management path.
+
+## v0.20.10
+
+- Host management network adapters can now be created, renamed, moved between virtual switches, and removed.
+- IPv6 address, prefix, gateway, and DNS configuration is now available for host management adapters.
+- Interface metrics can be configured for host management adapters.
+- Network changes that could interrupt the active management connection are blocked automatically.
+
+## v0.20.9
+
+- Virtual switches can now be managed directly from the host networking view.
+- External, internal, and private virtual switches can be created, renamed, configured, and removed.
+- External switch uplinks can be selected and changed from HV-Desk.
+- Switch Embedded Teaming (SET) can be configured when creating a switch with multiple supported uplinks.
+- Switch changes now include stronger checks for VM usage and host management connectivity.
+
+## v0.20.8
+
+- Physical network adapter settings have been expanded.
+- VMQ and RDMA can be enabled or disabled on supported adapters.
+- MTU, Jumbo Frames, and interface metrics can be managed when supported by the adapter.
+- Adapter settings are shown only when HV-Desk can determine that the capability is available.
+
+## v0.20.7
+
+- Disabled physical network adapters are now detected more reliably and can be re-enabled from HV-Desk.
+- Physical adapter status now distinguishes more clearly between connected, disconnected, disabled, unavailable, and unknown states.
+- Physical adapters now have a dedicated settings view with hardware and connection details.
+- Adapter renaming has been moved into the settings view for a more consistent workflow.
+
+## v0.20.6
+
+- Physical host network adapters can now be enabled, disabled, and renamed from HV-Desk.
+- Adapter actions account for virtual switch, teaming, management, and cluster dependencies.
+- Physical adapter state and availability are displayed more accurately.
+
+## v0.20.5
+
+- Core host networking settings can now be managed directly from HV-Desk.
+- IPv4 addresses, DNS servers, default gateways, DHCP, and management VLAN settings can be changed from the host view.
+- Network changes are checked before execution to reduce the risk of losing management access.
+- Updated settings are read back from the host after changes are applied.
+
+## v0.20.4
+
+- The host networking view now brings together physical adapters, virtual switches, management adapters, and IP configuration.
+- Physical adapter to virtual switch relationships are shown, including Switch Embedded Teaming (SET).
+- Host management adapter details include IP addresses, DNS, gateways, DHCP, and VLAN information.
+- Adapter capabilities such as VMQ, RDMA, and SR-IOV are displayed when available.
+
+## v0.20.3
+
+- A dedicated operating system section is now available on host detail pages.
+- Windows, hostname, domain membership, and related host information are easier to review.
+- Hostnames and supported domain membership settings can be managed from HV-Desk.
+- Changes that require a restart are clearly indicated instead of restarting the host automatically.
+
+## v0.20.2
+
+- Host detail pages have been reorganized to support the expanding host administration features.
+- Host sections now use a more stable navigation structure while keeping existing information and actions available.
+
+## v0.20.1
+
+- Host settings are displayed more consistently when Windows does not support or return a value.
+- Editing multiple host settings provides clearer feedback when individual settings cannot be changed.
+- Live Migration settings are reported more reliably across the host view.
+
+## v0.20.0
+
+- Hyper-V host settings can now be viewed and managed directly from HV-Desk.
+- Default VM and virtual disk paths, Live Migration, Storage Migration, NUMA, and related host settings are available from the host detail page.
+- Unsupported or read-only settings are clearly identified instead of displaying misleading values.
+- Changes are validated and read back from the host after they are applied.
+- Potentially disruptive host setting changes require explicit confirmation.
+
+## v0.19.10
+
+- User sessions now react more consistently when an account is disabled.
+- Authentication state, permissions, and active sessions have been made more consistent.
+
+## v0.19.9
+
+- Role and permission handling has been hardened across Administration and cluster views.
+- Users can no longer grant permissions that they do not hold themselves.
+- Cluster detail access now respects scoped permissions more consistently.
+- The currently signed-in user is displayed in the sidebar.
+
+## v0.19.8
+
+- The interface now hides or disables areas and actions that the current user is not allowed to use.
+- Host- and cluster-scoped permissions are reflected directly in navigation and action availability.
+- Changes to a user's role are reflected without requiring a new sign-in.
+- Loading of larger application areas has been improved.
+
+## v0.19.7
+
+- Roles can now be assigned globally or only to selected hosts and clusters.
+- Users can be limited to the infrastructure they are responsible for.
+- Global and scoped role assignments can be combined.
+- Administration tables remain usable at narrower window sizes.
+
+## v0.19.6
+
+- Custom roles can now be created in addition to the built-in roles.
+- Permissions can be selected individually for custom roles.
+- Custom roles can be assigned to users and edited later.
+- Roles that are still in use are protected from accidental deletion.
+- Kerberos host access and Active Directory configuration reliability have been improved.
+
+## v0.19.5
+
+- HV-Desk now includes built-in Administrator, Operator, and Viewer roles.
+- User roles can be viewed and changed from Administration.
+- A dedicated Roles area shows the permissions available to each role.
+- The last remaining administrator account is protected from accidental removal of administrative access.
+
+## v0.19.4
+
+- Multiple Kerberos profiles can now be managed for different domains or host environments.
+- Hosts and clusters can be assigned to the appropriate Kerberos profile when they are added.
+- Kerberos profiles can be created, tested, disabled, and removed from Administration.
+- Cluster nodes inherit the profile assigned to their cluster.
+
 ## v0.19.3
 
 - Workgroup hosts can now be added and managed securely using local credentials.
