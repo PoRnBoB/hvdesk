@@ -5,6 +5,46 @@ The newest version is listed first.
 
 ---
 
+## v0.20.18
+
+- Host and management interfaces can now use multiple IPv4 and IPv6 addresses.
+- Additional addresses can be added or removed individually without replacing existing configuration.
+- Address changes include stronger validation and post-change verification.
+
+## v0.20.17
+
+- Management VLAN configuration now supports Untagged, Access, and Trunk modes.
+- Physical adapter VLAN settings can be managed when the adapter exposes a reliable VLAN capability.
+- VLAN validation, adapter identification, and network safety checks have been hardened.
+
+## v0.20.16
+
+- Connection-specific DNS suffixes and DNS registration settings can now be managed per host interface.
+- The host-wide DNS suffix search list can now be configured from HV-Desk.
+- DNS configuration handling and post-change verification have been hardened.
+
+## v0.20.15
+
+- Wake-on-LAN using Magic Packet can now be configured on supported physical adapters.
+- Network gateway verification has been hardened to handle multiple default routes more reliably.
+
+## v0.20.14
+
+- Physical network adapters used directly by the host can now be configured with IPv4, IPv6, DNS, gateways, DHCPv4, and interface metrics.
+- Direct host network changes use the same management connectivity safeguards as existing host networking.
+- Interface identification and post-change verification have been hardened.
+
+## v0.20.13
+
+- Physical adapters can now be added to or removed from existing Switch Embedded Teaming (SET) switches.
+- SET changes include safeguards against invalid adapter assignments, removing the final team member, and disrupting management connectivity.
+
+## v0.20.12
+
+- Host networking now presents virtual switches, uplinks, management adapters, routing, and VM usage as a connected network topology.
+- Physical adapters show how they are currently used, including SET, LBFO, switch uplink, and direct host usage.
+- Host network editing and routing navigation have been consolidated for a more consistent workflow.
+
 ## v0.20.11
 
 - Host networking now includes a dedicated routing view for IPv4 and IPv6 routes.
