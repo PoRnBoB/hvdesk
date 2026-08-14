@@ -4,6 +4,23 @@ All notable user-visible changes to HV-Desk are documented in this file.
 The newest version is listed first.
 
 ---
+## v0.20.21
+
+- VM network adapter creation and VLAN configuration have been made more reliable.
+- Virtual switches are now selected using stable identifiers when adding or editing VM network adapters.
+- VM network adapter editing no longer reconnects the switch unless a switch change was explicitly requested.
+
+## v0.20.20
+
+- Host network data is now refreshed consistently after network changes, with clear warnings if a refresh fails.
+- Virtual switch uplink validation and adapter selection have been hardened.
+- Virtual switch operations now provide more consistent task and audit tracking.
+
+## v0.20.19
+
+- NIC Teaming (LBFO) now shows team status, teaming mode, load-balancing mode, and member status.
+- LBFO adapter detection has been improved across the host networking view.
+- LBFO remains read-only, while existing SET member management remains fully available.
 
 ## v0.20.18
 
