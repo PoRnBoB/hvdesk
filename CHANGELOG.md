@@ -4,6 +4,26 @@ All notable user-visible changes to HV-Desk are documented in this file.
 The newest version is listed first.
 
 ---
+## v0.20.24
+
+- VM disk management has been expanded with disk moves, resize, removal, and more reliable QoS handling.
+- VHD/VHDX management now includes compact, convert, and merge operations.
+- DVD/ISO handling and storage safety checks have been improved.
+- Host storage inventory and health reporting now cover volumes, disks, partitions, physical disks, pools, virtual disks, and reliability data.
+
+## v0.20.23
+
+- English translations across the networking area have been completed.
+- Networking error handling and capability states are now presented more consistently.
+- Networking frontend coverage and consistency have been hardened.
+
+## v0.20.22
+
+- Advanced physical network adapter settings now include RSS, RSC, LSO, checksum and segmentation offloads, QoS/DCB, and adapter bindings where supported.
+- Advanced IP interface settings such as automatic metrics, forwarding, weak-host behavior, and router discovery can now be managed.
+- Virtual switch configuration has been expanded with extensions, bandwidth settings, notes, SR-IOV, and Packet Direct options.
+- VM network adapter management now includes trunk VLANs, bandwidth weight, device naming, and teaming support.
+
 ## v0.20.21
 
 - VM network adapter creation and VLAN configuration have been made more reliable.
