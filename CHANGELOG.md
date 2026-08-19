@@ -4,6 +4,19 @@ All notable user-visible changes to HV-Desk are documented in this file.
 The newest version is listed first.
 
 ---
+## v0.21.1
+
+- Host disks can now be rescanned, brought online or offline, initialized, partitioned, and formatted directly from the existing storage view.
+- Volume labels, drive letters, folder mount points, and partition sizes can now be managed from HV-Desk.
+- Destructive storage actions include stronger identity, usage, confirmation, and post-change safety checks.
+
+## v0.21.0
+
+- VM settings management has been expanded with additional CPU, memory, NUMA, migration, startup, paging, and checkpoint options.
+- VM setting changes are now verified against the actual host state instead of relying on requested values alone.
+- Historical performance metrics are now available for hosts and VMs with hour, day, week, and month views.
+- Performance history uses retained and aggregated time-series data for longer-term visibility.
+
 ## v0.20.24
 
 - VM disk management has been expanded with disk moves, resize, removal, and more reliable QoS handling.
